@@ -82,7 +82,17 @@ public class Contacto {
 
 		System.out.println("ingrese el nuevo nombre del contacto");
 		nombre= sc.nextLine();
-		return "el nuevo nombre del contacto es: "+nombre ;
-		
+		System.out.println("ingrese el nuevo numero de celular del contacto");
+		numeroCelular = sc.nextInt();
+		System.out.println("ingrese el nuevo correo electornico del contacto");
+		correo=sc.nextLine();
+		System.out.println("ingrese la empresa o institución del contacto");
+		empresa=sc.nextLine();
+
+		String resultado = "El nuevo nombre del contacto es: " + nombre + "\n"
+                + "El nuevo número de celular del contacto es: " + numeroCelular + "\n"
+                + "El nuevo correo electrónico del contacto es: " + correo + "\n"
+                + "La empresa o institución del contacto es: " + empresa;
+		return resultado;		
 	}
 }
