@@ -85,6 +85,7 @@ public class Contacto {
 		System.out.println("ingrese el nuevo numero de celular del contacto");
 		numeroCelular = sc.nextInt();
 		System.out.println("ingrese el nuevo correo electornico del contacto");
+		sc.nextLine();
 		correo=sc.nextLine();
 		System.out.println("ingrese la empresa o institución del contacto");
 		empresa=sc.nextLine();
