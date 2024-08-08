@@ -1,5 +1,5 @@
 package laAgendaDeJuliana;
-
+import java.util.Scanner;
 public class Contacto {
 	
 	private String nombre;
@@ -21,7 +21,7 @@ public class Contacto {
 	}
 	
 	
-	
+	Scanner sc= new Scanner (System.in);
 	
 	public String getNombre() {
 		return nombre;
@@ -61,4 +61,28 @@ public class Contacto {
 		return "Mensaje enviado:"+mensaje;
 	}
 	
+	public String llamada (String llamar) {
+		return "llamando a:"+nombre;
+	}
+	
+	public String eliminar (String eliminar) {
+		return "se ha eliminado:"+nombre+" de su lista de contactos";
+	}
+	
+	public String añadir (String agregar) {
+		return "se ha agregado:"+nombre+" a su lista de contactos";
+	}
+	
+	public String busqueda (String buscar) {
+		return nombre+numeroCelular+correo+empresa;
+	}
+	
+	public String modificacion (String modificar) {
+		System.out.println("el nombre actual del contacto es: "+nombre);
+
+		System.out.println("ingrese el nuevo nombre del contacto");
+		nombre= sc.nextLine();
+		return "el nuevo nombre del contacto es: "+nombre ;
+		
+	}
 }
